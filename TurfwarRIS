@@ -298,7 +298,7 @@ local function start()
         end
     end
 
-    spawnItem("MMachete", 1)
+    spawnItem("MilAxe", 1)
     spawnItem("SUPAK", 3)
     getActiveStat()
 
@@ -374,7 +374,7 @@ _G.connection[1] = UserInputService.InputBegan:Connect(function(input, gameProce
 
     if localPlayer.Character ~= nil then
         if input.KeyCode == Enum.KeyCode.R then
-            if localPlayer.Character:FindFirstChild("hasPrimary") ~= nil and localPlayer.Character.hasPrimary:FindFirstChild("MMachete") ~= nil then
+            if localPlayer.Character:FindFirstChild("hasPrimary") ~= nil and localPlayer.Character.hasPrimary:FindFirstChild("MilAxe") ~= nil then
                 if toggle.using == true then
                     return
                 end
