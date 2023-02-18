@@ -299,7 +299,7 @@ local function start()
     end
 
     spawnItem("MilAxe", 1)
-    spawnItem("SUPAK", 3)
+    spawnItem("ASVal", 3)
     getActiveStat()
 
     workspace.ServerStuff.dropAmmo:FireServer("scrap", 90)
