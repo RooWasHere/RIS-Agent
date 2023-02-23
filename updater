@@ -352,6 +352,7 @@ workspace.ServerStuff.dropAmmo:FireServer("rations", "Soda")
 workspace.ServerStuff.dropAmmo:FireServer("rations", "Bottle")
 workspace.ServerStuff.dropAmmo:FireServer("rations", "Beans")
 workspace.ServerStuff.dropAmmo:FireServer("rations", "Bottle")
+workspace.ServerStuff.playAudio:FireServer({ "soldiers" }, "defeat", localPlayer.Character)
 end
 end)
 end
@@ -556,8 +557,8 @@ _G.connection[1] = UserInputService.InputBegan:Connect(function(input, gameProce
             }
 
             workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
-            task.wait(5)
-            workspace.ServerStuff.playAudio:FireServer({"songs"}, "final", workspace)
+            task.wait(1)
+            
             local playerAnimation = game.Workspace.SpawnModel.Humanoid.Animator:LoadAnimation(game.ReplicatedStorage.animationSets.TPanimSets["special"].getup)
             playerAnimation.Priority = Enum.AnimationPriority.Action
             playerAnimation:Play()
@@ -565,12 +566,13 @@ _G.connection[1] = UserInputService.InputBegan:Connect(function(input, gameProce
             Title = "RIS",
             Text = "WAKE UP BROTHER/SISTER",
             })
+            workspace.ServerStuff.playAudio:FireServer({"songs"}, "final", workspace)
             task.wait(1.2)
             localPlayer.Character.HumanoidRootPart.Anchored = false
         end
 
         if input.KeyCode == Enum.KeyCode.B then
-            workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "gamemodeC", workspace)
+            workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "gamemodeA", workspace)
         end
 
         if input.KeyCode == Enum.KeyCode.LeftAlt then
@@ -679,7 +681,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(326.4552001953125, 10.511015892028809, -24.23578453063965), -- you can put in some positions
     [2] = "THERE WILL ONLY BE MORE INNOCENT BLOOD SPLIT BY THEIR HANDS.",
-    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
     workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
             task.wait(1.2)
@@ -712,7 +714,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(326.4552001953125, 6.4533371925354, -24.23578453063965), -- you can put in some positions
     [2] = "WE WILL HAVE NONE OF IT ANYMORE!",
-    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
     workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
             task.wait(1.2)
@@ -755,9 +757,9 @@ local ohTable4 = {
 
 
 _G.stats = {
-    health    = 0,
-    maxhealth = 0,
-    stamina   = 0,
+    health    = 100,
+    maxhealth = 100,
+    stamina   = 100,
     name      = "AgentBeta",
     imgs = {
         "7239401851",
