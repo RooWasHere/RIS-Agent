@@ -660,7 +660,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(325.6919250488281, 10.511015892028809, 7.524389743804932), -- you can put in some positions
     [2] = "WE ARE DONE HIDING",
-    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
         workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
             task.wait(1.2)
@@ -671,7 +671,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(325.5856628417969, 10.511015892028809, -9.786577224731445), -- you can put in some positions
     [2] = "ULAYCON HAS TAKEN THEIR REIGN FOR FAR TOO LONG",
-    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
         workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
             task.wait(1.2)
@@ -682,7 +682,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(326.4552001953125, 10.511015892028809, -24.23578453063965), -- you can put in some positions
     [2] = "THERE WILL ONLY BE MORE INNOCENT BLOOD SPLIT BY THEIR HANDS.",
-    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
     workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
             task.wait(1.2)
@@ -693,7 +693,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(325.6919250488281, 6.4533371925354, 7.524389743804932), -- you can put in some positions
     [2] = "FOR OUR BROTHERS AND SISTERS",
-    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
         workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
             task.wait(1.2)
@@ -704,7 +704,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(325.5856628417969, 6.4533371925354, -9.786577224731445), -- you can put in some positions
     [2] = "FOR THOSE WE CARED ABOUT PUT ON THIS SICK TV SHOW WHERE THEY'RE DOOMED TO DIE",
-    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
         workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
             task.wait(1.2)
@@ -715,7 +715,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(326.4552001953125, 6.4533371925354, -24.23578453063965), -- you can put in some positions
     [2] = "WE WILL HAVE NONE OF IT ANYMORE!",
-    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
     workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
             task.wait(1.2)
@@ -727,7 +727,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(21.761, 23.441, -8.3437), -- you can put in some positions
     [2] = "TURF WAR HAS STARTED!",
-    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
       workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
             task.wait(1.2)
