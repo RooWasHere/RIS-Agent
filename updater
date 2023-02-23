@@ -648,14 +648,16 @@ coroutine.wrap(function()
         workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "shadowchosen", workspace)
         task.wait(3)
         workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "wartrack", workspace)
-       workspace.ServerStuff.playAudio:FireServer({"holdout", "boss_sounds"}, "sledge", workspace)
+        workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
+            task.wait(1.2)
+        workspace.ServerStuff.playAudio:FireServer({"holdout", "boss_sounds"}, "sledge", workspace)
 local ohString1 = "player_ping"
 local ohInstance2 = game.Workspace.activePlayers --this doesn't do anything
 local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(329.28173828125, 10.067136764526367, 3.46390700340271), -- you can put in some positions
     [2] = "WE ARE DONE HIDING, ULAYCON HAS TAKEN THEIR REIGN FOR FAR TOO LONG, THERE WILL ONLY BE MORE INNOCENT BLOOD SPLIT BY THEIR HANDS.",
-    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
 task.wait(1)
 workspace.ServerStuff.playAudio:FireServer({"holdout", "boss_sounds"}, "sledge", workspace)
@@ -665,7 +667,7 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(329.0289001464844, 9.967802047729492, -12.006908416748047), -- you can put in some positions
     [2] = "FOR OUR BROTHERS AND SISTERS, FOR THOSE WE CARED ABOUT PUT ON THIS SICK TV SHOW WHERE THEY'RE DOOMED TO DIE",
-    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
 task.wait(1)
 workspace.ServerStuff.playAudio:FireServer({"holdout", "boss_sounds"}, "sledge", workspace)
@@ -685,12 +687,11 @@ local ohInstance3 = nil -- same
 local ohTable4 = {
     [1] = Vector3.new(21.761, 23.441, -8.3437), -- you can put in some positions
     [2] = "TURF WAR HAS STARTED!",
-    [3] = 6 -- this handles the icon of ping, if 6 or higher icon will be hidden
+    [3] = 4 -- this handles the icon of ping, if 6 or higher icon will be hidden
 }
        
 
-workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
-task.wait(1.2)
+
 
 
         waitTable.sickler = true
