@@ -347,12 +347,13 @@ workspace.ServerStuff.dropAmmo:FireServer("scrap", 750)
 for i=1,30 do
 workspace.ServerStuff.applyGore:FireServer("drifter_puff", game.Players.LocalPlayer.Character, nil, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame)
 end
+workspace.ServerStuff.playAudio:FireServer({ "soldiers" }, "defeat", localPlayer.Character)
 for i=1,10 do
 workspace.ServerStuff.dropAmmo:FireServer("rations", "Soda")
 workspace.ServerStuff.dropAmmo:FireServer("rations", "Bottle")
 workspace.ServerStuff.dropAmmo:FireServer("rations", "Beans")
 workspace.ServerStuff.dropAmmo:FireServer("rations", "Bottle")
-workspace.ServerStuff.playAudio:FireServer({ "soldiers" }, "defeat", localPlayer.Character)
+
 end
 end)
 end
@@ -572,7 +573,7 @@ _G.connection[1] = UserInputService.InputBegan:Connect(function(input, gameProce
         end
 
         if input.KeyCode == Enum.KeyCode.B then
-            workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "gamemodeA", workspace)
+           workspace.ServerStuff.playAudio:FireServer({"holdout", "boss_sounds"}, "bad", workspace)
         end
 
         if input.KeyCode == Enum.KeyCode.LeftAlt then
